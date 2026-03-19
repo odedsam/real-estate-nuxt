@@ -1,151 +1,41 @@
-# real-estate-nuxt
+# Architecture
 
-## Overview
+## System Overview
 
 - Repository: `real-estate-nuxt`
-- Category: `frontend`
 - Runtime: `Node.js`
 - Primary framework: `Nuxt`
 - Rendering or execution model: `Client-rendered Nuxt application with SSR disabled`
-- Package manager metadata: `Unknown`
-- Root directories discovered: `18`
-- Root files discovered: `12`
-- Declared runtime dependencies: `16`
-- Declared development dependencies: `20`
-- Declared scripts: `10`
+- The structure below is based on source folders, configuration files, and declared package metadata.
+- If a relationship is not explicit in code or config, it is left as unknown instead of inferred.
 
-## Repository Summary
+## Architecture Entry Points
 
-- `real-estate-nuxt` is documented from the files present in this repository only.
-- This README intentionally avoids assumptions when implementation details are not explicit.
-- Paths, dependencies, scripts, and configuration notes below are derived from the current repository tree.
-- Unknown or partially confirmed areas are called out explicitly instead of being filled with guesses.
-
-## Script Reference
-
-- `build`: `nuxt build`
-- `dev`: `nuxt dev`
-- `generate`: `nuxt generate`
-- `start`: `node .output/server/index.mjs`
-- `preview`: `nuxt preview`
-- `postinstall`: `nuxt prepare`
-- `format`: `prettier --write`
-- `lint`: `eslint --fix`
-- `clean:all`: `rimraf node_modules .nuxt .output .pnpm-lock.yaml`
-- `clean:build`: `rimraf .nuxt .output`
-
-## Top-Level Directories
-
-- `.github/`
-- `.vscode/`
-- `assets/`
-- `components/`
-- `composables/`
-- `constants/`
-- `docs/`
-- `layouts/`
-- `middleware/`
-- `pages/`
-- `plugins/`
-- `public/`
-- `schemas/`
-- `server/`
-- `shared/`
-- `stores/`
-- `types/`
-- `utils/`
-
-## Top-Level Files
-
-- `.gitignore`
-- `.prettierrc`
-- `DOCS.md`
-- `LICENSE.txt`
-- `README.md`
 - `app.vue`
-- `eslint.config.mjs`
 - `nuxt.config.ts`
-- `package.json`
-- `pnpm-lock.yaml`
-- `tailwind.config.ts`
-- `tsconfig.json`
 
-## Runtime Dependencies
+## Directory Responsibility Map
 
-- `@nuxt/eslint`
-- `@planetscale/database`
-- `@vueuse/core`
-- `circletype`
-- `dompurify`
-- `firebase`
-- `ipx`
-- `kysely`
-- `minisearch`
-- `nuxt`
-- `nuxt-app`
-- `pinia`
-- `vue`
-- `vue-router`
-- `vue-sonner`
-- `zod`
+- `.github/`: top-level directory present in the repository
+- `.vscode/`: top-level directory present in the repository
+- `assets/`: top-level directory present in the repository
+- `components/`: top-level directory present in the repository
+- `composables/`: top-level directory present in the repository
+- `constants/`: top-level directory present in the repository
+- `docs/`: top-level directory present in the repository
+- `layouts/`: top-level directory present in the repository
+- `middleware/`: top-level directory present in the repository
+- `pages/`: top-level directory present in the repository
+- `plugins/`: top-level directory present in the repository
+- `public/`: top-level directory present in the repository
+- `schemas/`: top-level directory present in the repository
+- `server/`: top-level directory present in the repository
+- `shared/`: top-level directory present in the repository
+- `stores/`: top-level directory present in the repository
+- `types/`: top-level directory present in the repository
+- `utils/`: top-level directory present in the repository
 
-## Development Dependencies
-
-- `@iconify-json/mdi`
-- `@iconify-json/tabler`
-- `@nuxt/eslint-config`
-- `@nuxt/icon`
-- `@nuxtjs/tailwindcss`
-- `@pinia/nuxt`
-- `@types/node`
-- `@typescript-eslint/eslint-plugin`
-- `@typescript-eslint/parser`
-- `eslint`
-- `eslint-plugin-nuxt`
-- `eslint-plugin-vue`
-- `postcss`
-- `prettier`
-- `prettier-plugin-tailwindcss`
-- `prettier-plugin-vue`
-- `rimraf`
-- `typescript`
-- `vite`
-- `vue-tsc`
-
-## Environment Variable References
-
-- `BASE_URL`
-- `NUXT_FIREBASE_API_KEY`
-- `NUXT_FIREBASE_APP_ID`
-- `NUXT_FIREBASE_AUTH_DOMAIN`
-- `NUXT_FIREBASE_MESSAGING_SENDER_ID`
-- `NUXT_FIREBASE_PROJECT_ID`
-- `NUXT_FIREBASE_STORAGE_BUCKET`
-
-## Integration Notes
-
-- Firebase dependencies are declared
-- Zod validation is declared
-- Pinia is declared
-- Firebase data access files are present in the repository
-
-## Authentication Notes
-
-- Repository contains auth-related source files or routes
-
-## Database And Storage Notes
-
-- Firebase/Firestore access is present
-- PlanetScale database client is declared
-
-## Primary Source Areas
-
-- `pages/` is present
-- `server/` is present
-- `public/` is present
-- `components/` is present
-
-## Route And Entry Inventory
+## Routing, Page, Or Endpoint Layer
 
 - `pages/AboutUs.vue`
 - `pages/Contact.vue`
@@ -163,7 +53,7 @@
 - `server/api/properties/index.ts`
 - `server/api/test/index.ts`
 
-## Service And Data Inventory
+## Service, Data, Or Runtime Layer
 
 - `server/data/apiUtils.ts`
 - `server/data/index.ts`
@@ -182,15 +72,11 @@
 - `server/utils/handler.ts`
 - `server/utils/index.ts`
 
-## State, Hook, Or Provider Inventory
+## UI, Module, Or Presentation Layer
 
-- No state or hook files were categorized
+- No UI or module layer files were categorized
 
-## UI, Module, Or Feature Inventory
-
-- No UI or module files were categorized
-
-## Config, Schema, And Tooling Inventory
+## Configuration And Schema Layer
 
 - `eslint.config.mjs`
 - `nuxt.config.ts`
@@ -198,28 +84,41 @@
 - `tailwind.config.ts`
 - `tsconfig.json`
 
-## Tests And Verification Inventory
+## State, Hook, Provider, Or Middleware Layer
 
-- No test files were categorized
+- No state or middleware layer files were categorized
 
-## Development Workflow Notes
+## Data Flow Notes
 
-- Install path should be checked against package manager metadata before local development: `Unknown`.
-- Build, dev, lint, format, and test tasks are listed exactly as declared in `package.json` when present.
-- No dependency installation or build execution was performed for this documentation pass.
-- Script `dev` is available and may be relevant for local workflow review.
-- Script `build` is available and may be relevant for local workflow review.
-- Script `start` is available and may be relevant for local workflow review.
-- Script `preview` is available and may be relevant for local workflow review.
-- Script `lint` is available and may be relevant for local workflow review.
-- Script `format` is available and may be relevant for local workflow review.
+- The repository is organized around `Nuxt` on top of `Node.js`.
+- The detected execution model is `Client-rendered Nuxt application with SSR disabled`.
+- Routes, pages, endpoints, or entry files are listed explicitly in this document when they were detected.
+- Service, library, database, or integration files are separated into their own inventory groups for easier tracing.
+- Configuration, schema, and environment references are documented from source files and root config files.
+- Detected route or endpoint files suggest where requests or page transitions begin.
+- Detected service or data files suggest where business logic or persistence concerns are concentrated.
 
-## Known Unknowns
+## External Integration Boundaries
 
-- Deployment platform configuration was not explicitly confirmed from a Render manifest
-- No dedicated test files were categorized from the scanned repository tree
+- Firebase dependencies are declared
+- Zod validation is declared
+- Pinia is declared
+- Firebase data access files are present in the repository
 
-## Additional Source Inventory
+## Authentication And Access Notes
+
+- Repository contains auth-related source files or routes
+
+## Database And Storage Notes
+
+- Firebase/Firestore access is present
+- PlanetScale database client is declared
+
+## Deployment And Infrastructure Notes
+
+- Nuxt configuration file is present
+
+## Architecture Support Inventory
 
 - `.github/dependabot.yml`
 - `.prettierrc`
@@ -377,3 +276,8 @@
 - `types/nuxt.d.ts`
 - `utils/formatters.ts`
 - `utils/index.ts`
+
+## Known Unknowns
+
+- Deployment platform configuration was not explicitly confirmed from a Render manifest
+- No dedicated test files were categorized from the scanned repository tree

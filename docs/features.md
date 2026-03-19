@@ -1,151 +1,13 @@
-# real-estate-nuxt
+# Features
 
-## Overview
+## Feature Inventory Overview
 
 - Repository: `real-estate-nuxt`
 - Category: `frontend`
-- Runtime: `Node.js`
-- Primary framework: `Nuxt`
-- Rendering or execution model: `Client-rendered Nuxt application with SSR disabled`
-- Package manager metadata: `Unknown`
-- Root directories discovered: `18`
-- Root files discovered: `12`
-- Declared runtime dependencies: `16`
-- Declared development dependencies: `20`
-- Declared scripts: `10`
+- This file inventories routes, modules, services, state containers, UI surfaces, and supporting implementation files.
+- The grouping is derived from folder names and file paths rather than undocumented assumptions about runtime behavior.
 
-## Repository Summary
-
-- `real-estate-nuxt` is documented from the files present in this repository only.
-- This README intentionally avoids assumptions when implementation details are not explicit.
-- Paths, dependencies, scripts, and configuration notes below are derived from the current repository tree.
-- Unknown or partially confirmed areas are called out explicitly instead of being filled with guesses.
-
-## Script Reference
-
-- `build`: `nuxt build`
-- `dev`: `nuxt dev`
-- `generate`: `nuxt generate`
-- `start`: `node .output/server/index.mjs`
-- `preview`: `nuxt preview`
-- `postinstall`: `nuxt prepare`
-- `format`: `prettier --write`
-- `lint`: `eslint --fix`
-- `clean:all`: `rimraf node_modules .nuxt .output .pnpm-lock.yaml`
-- `clean:build`: `rimraf .nuxt .output`
-
-## Top-Level Directories
-
-- `.github/`
-- `.vscode/`
-- `assets/`
-- `components/`
-- `composables/`
-- `constants/`
-- `docs/`
-- `layouts/`
-- `middleware/`
-- `pages/`
-- `plugins/`
-- `public/`
-- `schemas/`
-- `server/`
-- `shared/`
-- `stores/`
-- `types/`
-- `utils/`
-
-## Top-Level Files
-
-- `.gitignore`
-- `.prettierrc`
-- `DOCS.md`
-- `LICENSE.txt`
-- `README.md`
-- `app.vue`
-- `eslint.config.mjs`
-- `nuxt.config.ts`
-- `package.json`
-- `pnpm-lock.yaml`
-- `tailwind.config.ts`
-- `tsconfig.json`
-
-## Runtime Dependencies
-
-- `@nuxt/eslint`
-- `@planetscale/database`
-- `@vueuse/core`
-- `circletype`
-- `dompurify`
-- `firebase`
-- `ipx`
-- `kysely`
-- `minisearch`
-- `nuxt`
-- `nuxt-app`
-- `pinia`
-- `vue`
-- `vue-router`
-- `vue-sonner`
-- `zod`
-
-## Development Dependencies
-
-- `@iconify-json/mdi`
-- `@iconify-json/tabler`
-- `@nuxt/eslint-config`
-- `@nuxt/icon`
-- `@nuxtjs/tailwindcss`
-- `@pinia/nuxt`
-- `@types/node`
-- `@typescript-eslint/eslint-plugin`
-- `@typescript-eslint/parser`
-- `eslint`
-- `eslint-plugin-nuxt`
-- `eslint-plugin-vue`
-- `postcss`
-- `prettier`
-- `prettier-plugin-tailwindcss`
-- `prettier-plugin-vue`
-- `rimraf`
-- `typescript`
-- `vite`
-- `vue-tsc`
-
-## Environment Variable References
-
-- `BASE_URL`
-- `NUXT_FIREBASE_API_KEY`
-- `NUXT_FIREBASE_APP_ID`
-- `NUXT_FIREBASE_AUTH_DOMAIN`
-- `NUXT_FIREBASE_MESSAGING_SENDER_ID`
-- `NUXT_FIREBASE_PROJECT_ID`
-- `NUXT_FIREBASE_STORAGE_BUCKET`
-
-## Integration Notes
-
-- Firebase dependencies are declared
-- Zod validation is declared
-- Pinia is declared
-- Firebase data access files are present in the repository
-
-## Authentication Notes
-
-- Repository contains auth-related source files or routes
-
-## Database And Storage Notes
-
-- Firebase/Firestore access is present
-- PlanetScale database client is declared
-
-## Primary Source Areas
-
-- `pages/` is present
-- `server/` is present
-- `public/` is present
-- `components/` is present
-
-## Route And Entry Inventory
+## Route, Page, And Endpoint Files
 
 - `pages/AboutUs.vue`
 - `pages/Contact.vue`
@@ -163,7 +25,11 @@
 - `server/api/properties/index.ts`
 - `server/api/test/index.ts`
 
-## Service And Data Inventory
+## UI, Module, Feature, And Layout Files
+
+- No UI or feature files were categorized
+
+## Service, Data, And Library Files
 
 - `server/data/apiUtils.ts`
 - `server/data/index.ts`
@@ -182,15 +48,11 @@
 - `server/utils/handler.ts`
 - `server/utils/index.ts`
 
-## State, Hook, Or Provider Inventory
+## State, Hook, Provider, And Middleware Files
 
-- No state or hook files were categorized
+- No state or middleware files were categorized
 
-## UI, Module, Or Feature Inventory
-
-- No UI or module files were categorized
-
-## Config, Schema, And Tooling Inventory
+## Configuration, Schema, And Type Files
 
 - `eslint.config.mjs`
 - `nuxt.config.ts`
@@ -198,28 +60,146 @@
 - `tailwind.config.ts`
 - `tsconfig.json`
 
-## Tests And Verification Inventory
+## Test And Verification Files
 
-- No test files were categorized
+- No tests were categorized
 
-## Development Workflow Notes
+## Support And Miscellaneous Source Files
 
-- Install path should be checked against package manager metadata before local development: `Unknown`.
-- Build, dev, lint, format, and test tasks are listed exactly as declared in `package.json` when present.
-- No dependency installation or build execution was performed for this documentation pass.
-- Script `dev` is available and may be relevant for local workflow review.
-- Script `build` is available and may be relevant for local workflow review.
-- Script `start` is available and may be relevant for local workflow review.
-- Script `preview` is available and may be relevant for local workflow review.
-- Script `lint` is available and may be relevant for local workflow review.
-- Script `format` is available and may be relevant for local workflow review.
+- `.github/dependabot.yml`
+- `.prettierrc`
+- `app.vue`
+- `assets/css/tailwind.css`
+- `components/ContactForm.vue`
+- `components/DynamicHero.vue`
+- `components/FeaturedPropertyCard.vue`
+- `components/InfoHighLightBox.vue`
+- `components/InquiryForm.vue`
+- `components/PaginationInfo.vue`
+- `components/PaginationWrapper.vue`
+- `components/PropertyInquriryForm.vue`
+- `components/ServiceCard.vue`
+- `components/SiteFooter.vue`
+- `components/SiteHeader.vue`
+- `components/atoms/ArrowButton.vue`
+- `components/atoms/BaseNavLink.vue`
+- `components/atoms/Button.vue`
+- `components/atoms/CardPaginationStatus.vue`
+- `components/atoms/FooterInput.vue`
+- `components/atoms/GalleryImage.vue`
+- `components/atoms/IconBadge.vue`
+- `components/atoms/InfoItem.vue`
+- `components/atoms/Input.vue`
+- `components/atoms/InputCheckbox.vue`
+- `components/atoms/InputSvg.vue`
+- `components/atoms/LeftArrow.vue`
+- `components/atoms/ListHead.vue`
+- `components/atoms/Logo.vue`
+- `components/atoms/PaginationButton.vue`
+- `components/atoms/PopUp.vue`
+- `components/atoms/Preferred.vue`
+- `components/atoms/PrefferedInputs.vue`
+- `components/atoms/Search.vue`
+- `components/atoms/SelectInput.vue`
+- `components/atoms/StarRating.vue`
+- `components/atoms/TabIndicator.vue`
+- `components/molecules/CardPaginator.vue`
+- `components/molecules/CardThree.vue`
+- `components/molecules/CardThreeDesk.vue`
+- `components/molecules/CircleCTA.vue`
+- `components/molecules/ContactLocationCard.vue`
+- `components/molecules/ExploreCard.vue`
+- `components/molecules/FaqCard.vue`
+- `components/molecules/ImageNavigator.vue`
+- `components/molecules/ListingBox.vue`
+- `components/molecules/MainBox.vue`
+- `components/molecules/OurValuedClients.vue`
+- `components/molecules/PrefInputs.vue`
+- `components/molecules/ProfileCard.vue`
+- `components/molecules/RepeatedBlock.vue`
+- `components/molecules/SearchBox.vue`
+- `components/molecules/SearchBoxTwo.vue`
+- `components/molecules/SliderControl.vue`
+- `components/molecules/SortInput.vue`
+- `components/molecules/TestimonialCard.vue`
+- `components/molecules/UnlockBox.vue`
+- `components/molecules/ViewButton.vue`
+- `components/molecules/WhatOurClient.vue`
+- `components/organisms/AboutHeroDesk.vue`
+- `components/organisms/BoxInput.vue`
+- `components/organisms/CardHeader.vue`
+- `components/organisms/CardTAbout.vue`
+- `components/organisms/CardWrapper.vue`
+- `components/organisms/ColumnFourthCard.vue`
+- `components/organisms/HeroDesktop.vue`
+- `components/organisms/HeroHighlight.vue`
+- `components/organisms/HeroMobile.vue`
+- `components/organisms/HomeHero.vue`
+- `components/organisms/MainBlock.vue`
+- `components/organisms/MobileMenu.vue`
+- `components/organisms/NavigatorDots.vue`
+- `components/organisms/Office.vue`
+- `components/organisms/SendInquiry.vue`
+- `components/organisms/Steps.vue`
+- `components/organisms/UICredit.vue`
+- `components/properties/PropertyCard.vue`
+- `components/properties/PropertyFeatures.vue`
+- `components/properties/PropertyHighlight.vue`
+- `components/properties/PropertyImage.vue`
+- `components/properties/PropertyPrice.vue`
+- `components/properties/PropertySummary.vue`
+- `components/properties/ReadMore.vue`
+- `components/properties/SearchProperty.vue`
+- `components/properties/Slug/SlugCard.vue`
+- `components/properties/Slug/SlugCardHeader.vue`
+- `components/properties/Slug/SlugContent.vue`
+- `components/properties/variants/HomeCard.vue`
+- `components/properties/variants/PropertiesPageCard.vue`
+- `components/templates/FormContact.vue`
+- `components/templates/FormId.vue`
+- `components/templates/InquireProperty.vue`
+- `components/templates/ListingData.vue`
+- `components/templates/PropertyForm.vue`
+- `composables/buttonMobile.js`
+- `composables/reactiveWidth.ts`
+- `composables/usePaginatedData.ts`
+- `composables/usePropertyId.ts`
+- `constants/aboutsUsPage.ts`
+- `constants/contactPage.ts`
+- `constants/homePage.ts`
+- `constants/index.ts`
+- `constants/propertiesPageConstants.ts`
+- `constants/sheet.ts`
+- `constants/toaster.ts`
+- `constants/types.ts`
+- `layouts/default.vue`
+- `middleware/auth.global.ts`
+- `package.json`
+- `plugins/imageLoader.ts`
+- `plugins/mediaQueries.client.ts`
+- `plugins/vue-sonner.client.ts`
+- `shared/MaintanceModal.vue`
+- `stores/maintanceModal.ts`
+- `stores/modalStore.ts`
+- `stores/pagination.ts`
+- `types/index.ts`
+- `types/nuxt.d.ts`
+- `utils/formatters.ts`
+- `utils/index.ts`
+
+## Feature-Level Notes
+
+- Files are grouped by path-based feature cues such as `routes`, `pages`, `services`, `controllers`, `features`, and `components`.
+- The inventory is intentionally path-oriented so the document remains faithful to the repository tree.
+- When a behavior is not explicit from file names or config, it is marked as unknown rather than inferred.
+- Frontend repos emphasize pages, routes, UI sections, components, stores, hooks, and API touchpoints.
 
 ## Known Unknowns
 
 - Deployment platform configuration was not explicitly confirmed from a Render manifest
 - No dedicated test files were categorized from the scanned repository tree
 
-## Additional Source Inventory
+## Complete Scanned Source Inventory
 
 - `.github/dependabot.yml`
 - `.prettierrc`

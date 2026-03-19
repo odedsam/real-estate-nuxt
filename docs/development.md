@@ -1,27 +1,14 @@
-# real-estate-nuxt
+# Development
 
-## Overview
+## Development Orientation
 
 - Repository: `real-estate-nuxt`
-- Category: `frontend`
-- Runtime: `Node.js`
-- Primary framework: `Nuxt`
-- Rendering or execution model: `Client-rendered Nuxt application with SSR disabled`
 - Package manager metadata: `Unknown`
-- Root directories discovered: `18`
-- Root files discovered: `12`
-- Declared runtime dependencies: `16`
-- Declared development dependencies: `20`
-- Declared scripts: `10`
+- Suggested install command from package manager metadata: `Install command not explicitly declared in repository metadata`
+- Commands below are limited to scripts or toolchain files that are actually present in the repo.
+- This file is meant to help with local work, maintenance, and scanning the implementation surface area.
 
-## Repository Summary
-
-- `real-estate-nuxt` is documented from the files present in this repository only.
-- This README intentionally avoids assumptions when implementation details are not explicit.
-- Paths, dependencies, scripts, and configuration notes below are derived from the current repository tree.
-- Unknown or partially confirmed areas are called out explicitly instead of being filled with guesses.
-
-## Script Reference
+## Available Scripts
 
 - `build`: `nuxt build`
 - `dev`: `nuxt dev`
@@ -34,7 +21,38 @@
 - `clean:all`: `rimraf node_modules .nuxt .output .pnpm-lock.yaml`
 - `clean:build`: `rimraf .nuxt .output`
 
-## Top-Level Directories
+## Development Workflow Notes
+
+- Install path should be checked against package manager metadata before local development: `Unknown`.
+- Build, dev, lint, format, and test tasks are listed exactly as declared in `package.json` when present.
+- No dependency installation or build execution was performed for this documentation pass.
+- Script `dev` is available and may be relevant for local workflow review.
+- Script `build` is available and may be relevant for local workflow review.
+- Script `start` is available and may be relevant for local workflow review.
+- Script `preview` is available and may be relevant for local workflow review.
+- Script `lint` is available and may be relevant for local workflow review.
+- Script `format` is available and may be relevant for local workflow review.
+
+## Configuration Files
+
+- `.prettierrc`
+- `eslint.config.mjs`
+- `nuxt.config.ts`
+- `package.json`
+- `tailwind.config.ts`
+- `tsconfig.json`
+
+## Environment Variable Reference
+
+- `BASE_URL`
+- `NUXT_FIREBASE_API_KEY`
+- `NUXT_FIREBASE_APP_ID`
+- `NUXT_FIREBASE_AUTH_DOMAIN`
+- `NUXT_FIREBASE_MESSAGING_SENDER_ID`
+- `NUXT_FIREBASE_PROJECT_ID`
+- `NUXT_FIREBASE_STORAGE_BUCKET`
+
+## Top-Level Directory Checklist
 
 - `.github/`
 - `.vscode/`
@@ -55,20 +73,45 @@
 - `types/`
 - `utils/`
 
-## Top-Level Files
+## Entry Points And Boot Files
 
-- `.gitignore`
-- `.prettierrc`
-- `DOCS.md`
-- `LICENSE.txt`
-- `README.md`
 - `app.vue`
+- `nuxt.config.ts`
+
+## Config And Schema Files
+
 - `eslint.config.mjs`
 - `nuxt.config.ts`
-- `package.json`
-- `pnpm-lock.yaml`
+- `schemas/formSchemas.ts`
 - `tailwind.config.ts`
 - `tsconfig.json`
+
+## Service, Data, Or Backend Touchpoint Files
+
+- `server/data/apiUtils.ts`
+- `server/data/index.ts`
+- `server/db/actions.ts`
+- `server/db/firebase.ts`
+- `server/db/forms.ts`
+- `server/db/property.ts`
+- `server/db/schemes.ts`
+- `server/db/users.ts`
+- `server/middelware/log.ts`
+- `server/tsconfig.json`
+- `server/types/firebase.types.ts`
+- `server/types/index.ts`
+- `server/types/property.types.ts`
+- `server/utils/formatters.ts`
+- `server/utils/handler.ts`
+- `server/utils/index.ts`
+
+## State, Middleware, Hook, Or Provider Files
+
+- No state or middleware files were categorized
+
+## Testing And Verification Files
+
+- No testing files were categorized
 
 ## Runtime Dependencies
 
@@ -112,114 +155,7 @@
 - `vite`
 - `vue-tsc`
 
-## Environment Variable References
-
-- `BASE_URL`
-- `NUXT_FIREBASE_API_KEY`
-- `NUXT_FIREBASE_APP_ID`
-- `NUXT_FIREBASE_AUTH_DOMAIN`
-- `NUXT_FIREBASE_MESSAGING_SENDER_ID`
-- `NUXT_FIREBASE_PROJECT_ID`
-- `NUXT_FIREBASE_STORAGE_BUCKET`
-
-## Integration Notes
-
-- Firebase dependencies are declared
-- Zod validation is declared
-- Pinia is declared
-- Firebase data access files are present in the repository
-
-## Authentication Notes
-
-- Repository contains auth-related source files or routes
-
-## Database And Storage Notes
-
-- Firebase/Firestore access is present
-- PlanetScale database client is declared
-
-## Primary Source Areas
-
-- `pages/` is present
-- `server/` is present
-- `public/` is present
-- `components/` is present
-
-## Route And Entry Inventory
-
-- `pages/AboutUs.vue`
-- `pages/Contact.vue`
-- `pages/Properties/[slugId].vue`
-- `pages/Properties/index.vue`
-- `pages/Services.vue`
-- `pages/Test.vue`
-- `pages/admin/index.vue`
-- `pages/index.vue`
-- `server/api/admin/get-contacts.ts`
-- `server/api/forms/contact.ts`
-- `server/api/forms/form-actions.ts`
-- `server/api/forms/inquiry.ts`
-- `server/api/properties/id.ts`
-- `server/api/properties/index.ts`
-- `server/api/test/index.ts`
-
-## Service And Data Inventory
-
-- `server/data/apiUtils.ts`
-- `server/data/index.ts`
-- `server/db/actions.ts`
-- `server/db/firebase.ts`
-- `server/db/forms.ts`
-- `server/db/property.ts`
-- `server/db/schemes.ts`
-- `server/db/users.ts`
-- `server/middelware/log.ts`
-- `server/tsconfig.json`
-- `server/types/firebase.types.ts`
-- `server/types/index.ts`
-- `server/types/property.types.ts`
-- `server/utils/formatters.ts`
-- `server/utils/handler.ts`
-- `server/utils/index.ts`
-
-## State, Hook, Or Provider Inventory
-
-- No state or hook files were categorized
-
-## UI, Module, Or Feature Inventory
-
-- No UI or module files were categorized
-
-## Config, Schema, And Tooling Inventory
-
-- `eslint.config.mjs`
-- `nuxt.config.ts`
-- `schemas/formSchemas.ts`
-- `tailwind.config.ts`
-- `tsconfig.json`
-
-## Tests And Verification Inventory
-
-- No test files were categorized
-
-## Development Workflow Notes
-
-- Install path should be checked against package manager metadata before local development: `Unknown`.
-- Build, dev, lint, format, and test tasks are listed exactly as declared in `package.json` when present.
-- No dependency installation or build execution was performed for this documentation pass.
-- Script `dev` is available and may be relevant for local workflow review.
-- Script `build` is available and may be relevant for local workflow review.
-- Script `start` is available and may be relevant for local workflow review.
-- Script `preview` is available and may be relevant for local workflow review.
-- Script `lint` is available and may be relevant for local workflow review.
-- Script `format` is available and may be relevant for local workflow review.
-
-## Known Unknowns
-
-- Deployment platform configuration was not explicitly confirmed from a Render manifest
-- No dedicated test files were categorized from the scanned repository tree
-
-## Additional Source Inventory
+## Additional Development Inventory
 
 - `.github/dependabot.yml`
 - `.prettierrc`
@@ -377,3 +313,8 @@
 - `types/nuxt.d.ts`
 - `utils/formatters.ts`
 - `utils/index.ts`
+
+## Known Unknowns
+
+- Deployment platform configuration was not explicitly confirmed from a Render manifest
+- No dedicated test files were categorized from the scanned repository tree
